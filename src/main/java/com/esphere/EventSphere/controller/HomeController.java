@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping
+    @GetMapping("/")
     public String home(){
+        System.out.println("Hello");
         return "Welcome to Event Sphere sever";
     }
 }
